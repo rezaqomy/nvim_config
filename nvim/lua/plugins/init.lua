@@ -9,7 +9,6 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({
-  -- نمونه پلاگین‌ها:
   { "nvim-treesitter/nvim-treesitter", build = ":TSUpdate" },
   { "nvim-lualine/lualine.nvim" },
   { "nvim-tree/nvim-tree.lua" },
