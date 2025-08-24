@@ -46,3 +46,12 @@ map("v", "<leader>c[",  "c[<C-r>\"]<Esc>", { noremap = true, silent = true })
 map("i", "<C-A>", "<HOME>")
 map("i", "<C-E>", "<END>")
 
+
+
+local opts = { noremap = true, silent = true }
+
+map("n", "<C-h>", "<C-w>h", opts)
+map("n", "<C-j>", "<C-w>j", opts)
+map("n", "<C-k>", "<C-w>k", opts)
+map("n", "<C-l>", "<C-w>l", opts)
+

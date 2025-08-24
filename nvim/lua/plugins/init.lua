@@ -10,4 +10,5 @@ vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({
     { import = "plugins.snacks" },
+    { import = "plugins.lsp_config" },
 })
