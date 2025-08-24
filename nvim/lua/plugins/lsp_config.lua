@@ -1,5 +1,9 @@
 return {
     "neovim/nvim-lspconfig",
+    dependencies = {
+        "williamboman/mason.nvim",
+        "williamboman/mason-lspconfig.nvim",
+    },
     config = function()
         local lspconfig = require("lspconfig")
 
@@ -10,6 +14,11 @@ return {
                 },
             },
         })
+
+        require("mason").setup()
+        require("mason-lspconfig").setup {
+            ensure_installed = { "pyright", "efm" },
+        }
 
         lspconfig.pyright.setup({})
 

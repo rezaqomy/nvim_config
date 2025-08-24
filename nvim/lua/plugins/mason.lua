@@ -1,6 +1,20 @@
 return {
-    "williamboman/mason.nvim",    
+    "williamboman/mason.nvim",
     build = ":MasonUpdate",
+    opts = {
+        ensure_installed = {
+            "black",
+            "rust-analyzer",
+            "pyright",
+            "clangd",
+            "clang-format",
+            "ltex-ls",
+            "tsserver",
+            "efm",
+            "omnisharp",
+        },
+
+    },
     config = function()
         require("mason").setup()
     end,

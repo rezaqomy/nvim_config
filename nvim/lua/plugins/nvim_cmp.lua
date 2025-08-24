@@ -33,7 +33,6 @@ return {
         }),
       })
 
-      -- برای command line
       cmp.setup.cmdline(":", {
         mapping = cmp.mapping.preset.cmdline(),
         sources = {
