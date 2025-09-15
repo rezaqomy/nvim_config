@@ -16,7 +16,6 @@ local OPTS = {
     scroll = { enabled = true },
     statuscolumn = { enabled = true },
     words = { enabled = true },
-    dim = { enabled = true }
 }
 
 local config = function()
@@ -29,7 +28,6 @@ local config = function()
     -- Snacks.scroll.enable()
     -- Snacks.words.enable()
     Snacks.init.setup(OPTS)
-    Snacks.dim()
 end
 
 
