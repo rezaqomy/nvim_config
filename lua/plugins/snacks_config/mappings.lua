@@ -22,7 +22,7 @@ return function ()
     -- Top Pickers & Explorer
     map("n", "<leader>fb", function() require('snacks').picker.buffers() end, { desc = "Buffers" })
     map("n", "<leader>fc", function() require('snacks').picker.files({ cwd = vim.fn.stdpath("config") }) end, { desc = "Find Config File" })
-    map("n", "<leader>ff", function() require('snacks').picker.files() end, { desc = "Find Files" })
+    map("n", "<leader>fF", function() require('snacks').picker.files() end, { desc = "Find Files" })
     map("n", "<leader>fg", function() require('snacks').picker.git_files() end, { desc = "Find Git Files" })
     map("n", "<leader>fp", function() require('snacks').picker.projects() end, { desc = "Projects" })
     map("n", "<leader>fr", function() require('snacks').picker.recent() end, { desc = "Recent" })

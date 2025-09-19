@@ -33,15 +33,12 @@ require("lazy").setup({
     { import = "plugins.trouble" },
     -- { import = "plugins.vim_tmux_navigator" },
     { import = "plugins.comment" },
+    { import = "plugins.barbar" },
+    { import = "plugins.lualine" },
+    { import = "plugins.nvim_treesitter" },
+    { import = "plugins.telescope" },
 })
 
 
-local capabilities = require('cmp_nvim_lsp').default_capabilities()
 
-require('lspconfig').rust_analyzer.setup({
-    capabilities = capabilities,
-    on_attach = function(client, bufnr)
-        -- Optional: you can set buffer keymaps here if you want
-    end,
-})
 
