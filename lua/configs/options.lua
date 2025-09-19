@@ -26,3 +26,5 @@ o.background = 'dark'
 
 vim.opt.clipboard = "unnamedplus"
 
+
+vim.opt.shada = [[!,'100,<5000,s10,h]]

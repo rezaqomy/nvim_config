@@ -66,13 +66,13 @@ return function ()
     map("n", "<leader>uC", function() require('snacks').picker.colorschemes() end, { desc = "Colorschemes" })
 
     -- LSP
-    map("n", "gd", function() require('snacks').picker.lsp_definitions() end, { desc = "Goto Definition" })
-    map("n", "gD", function() require('snacks').picker.lsp_declarations() end, { desc = "Goto Declaration" })
-    map("n", "gr", function() require('snacks').picker.lsp_references() end, { nowait = true, desc = "References" })
-    map("n", "gI", function() require('snacks').picker.lsp_implementations() end, { desc = "Goto Implementation" })
-    map("n", "gy", function() require('snacks').picker.lsp_type_definitions() end, { desc = "Goto Type Definition" })
-    map("n", "<leader>ss", function() require('snacks').picker.lsp_symbols() end, { desc = "LSP Symbols" })
-    map("n", "<leader>sS", function() require('snacks').picker.lsp_workspace_symbols() end, { desc = "LSP Workspace Symbols" })
+    -- map("n", "gd", function() require('snacks').picker.lsp_definitions() end, { desc = "Goto Definition" })
+    -- map("n", "gD", function() require('snacks').picker.lsp_declarations() end, { desc = "Goto Declaration" })
+    -- map("n", "gr", function() require('snacks').picker.lsp_references() end, { nowait = true, desc = "References" })
+    -- map("n", "gI", function() require('snacks').picker.lsp_implementations() end, { desc = "Goto Implementation" })
+    -- map("n", "gy", function() require('snacks').picker.lsp_type_definitions() end, { desc = "Goto Type Definition" })
+    -- map("n", "<leader>ss", function() require('snacks').picker.lsp_symbols() end, { desc = "LSP Symbols" })
+    -- map("n", "<leader>sS", function() require('snacks').picker.lsp_workspace_symbols() end, { desc = "LSP Workspace Symbols" })
 
     -- Other
     map("n", "<leader>z", function() require('snacks').zen() end, { desc = "Toggle Zen Mode" })

@@ -12,6 +12,7 @@ return {
             "tsserver",
             "efm",
             "omnisharp",
+            "gopls",
         },
 
     },

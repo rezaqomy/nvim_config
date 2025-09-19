@@ -11,7 +11,6 @@ return {
     },
     config = function()
         local treesitter = require("nvim-treesitter.configs")
-
         vim.api.nvim_create_autocmd("FileType", {
             pattern = {"markdown"},
             callback = function(ev)
@@ -31,7 +30,7 @@ return {
             auto_install = true,
             sync_install = false,
             highlight = {
-                enable = true,
+                enable = false,
                 disable = {"csv"} -- preferring chrisbra/csv.vim
             },
             textobjects = {select = {enable = true, lookahead = true}}

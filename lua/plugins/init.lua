@@ -35,7 +35,7 @@ require("lazy").setup({
     { import = "plugins.comment" },
     { import = "plugins.barbar" },
     { import = "plugins.lualine" },
-    { import = "plugins.nvim_treesitter" },
+    -- { import = "plugins.nvim_treesitter" },
     { import = "plugins.telescope" },
 })
 
