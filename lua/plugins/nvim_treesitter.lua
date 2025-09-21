@@ -30,7 +30,7 @@ return {
             auto_install = true,
             sync_install = false,
             highlight = {
-                enable = false,
+                enable = true,
                 disable = {"csv"} -- preferring chrisbra/csv.vim
             },
             textobjects = {select = {enable = true, lookahead = true}}
