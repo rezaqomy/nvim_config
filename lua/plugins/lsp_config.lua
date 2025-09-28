@@ -22,6 +22,24 @@ return {
 
         lspconfig.pyright.setup({})
 
+
+        -- define formatter(s) for efm
+        local black = {
+            formatCommand = "black --quiet -",
+            formatStdin = true,
+        }
+
+        -- efm config
+        lspconfig.efm.setup({
+            init_options = { documentFormatting = true },
+            filetypes = { "python" },
+            settings = {
+                rootMarkers = { ".git/" },
+                languages = {
+                    python = { black },
+                },
+            },
+        })
         lspconfig.tsserver.setup({})
     end,
 }

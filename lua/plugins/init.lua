@@ -37,6 +37,7 @@ require("lazy").setup({
     { import = "plugins.lualine" },
     { import = "plugins.nvim_treesitter" },
     { import = "plugins.telescope" },
+    { import = "plugins.vim_fugitive" }
 })
 
 

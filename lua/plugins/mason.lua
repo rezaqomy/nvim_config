@@ -13,6 +13,7 @@ return {
             "efm",
             "omnisharp",
             "gopls",
+            "black"
         },
 
     },
